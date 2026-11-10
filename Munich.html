@@ -363,16 +363,17 @@
     <img class="disclaimer-logo" src="https://wendycolleen.github.io/DarlenesTrip/Images/logo.png" alt="Darlene's trip to Munich, Germany">
 <h2>Welcome to München 2026.</h2>
 <div class="disclaimer-section">
-  <h3>📍 Navigationsinformationen</h3>
-  <p>Diese App verwendet Koordinaten von Google Maps. Für optimale Ergebnisse empfehlen wir die Verwendung von Google Maps.</p>
-  <p>Andere Apps, wie beispielsweise Apple Maps oder OSM, interpretieren dieselben Koordinaten teils abweichend — das kann zu Standortabweichungen und nicht optimalen Fußwegen führen.</p>
+  <h3>📍 Navigation information</h3>
+  <p>This app uses coordinates from Google Maps. For best results, we recommend using Google Maps.</p>
+  <p>Other apps, such as Apple Maps or OSM, sometimes interpret the same coordinates differently—which can lead to location discrepancies and suboptimal walking routes.</p>
 </div>
 <div class="disclaimer-section">
-  <h3>⚠️ Sicherheit & Haftung</h3>
-  <p>Achten Sie während der Nutzung dieser Tour stets auf Ihre Umgebung. Achten Sie auf den Verkehr, Fußgänger und die örtlichen Gegebenheiten.</p>
-  <p>Die hier angezeigte Karte basiert auf Kartendaten von OpenStreetMap-Mitwirkenden und kann Ungenauigkeiten enthalten. Routen und Orte werden ohne Gewähr bereitgestellt.</p>
-  <p>Die Nutzung erfolgt auf eigene Gefahr. Die Entwickler dieser App übernehmen keine Haftung für Unfälle, Verletzungen oder Probleme, die während der Nutzung dieser Tour auftreten können.</p>
+  <h3>⚠️ Safety & Liability</h3>
+  <p>Always be aware of your surroundings while using this tour. Watch out for traffic, pedestrians, and local conditions.</p>
+  <p>The map displayed here is based on map data contributed by OpenStreetMap contributors and may contain inaccuracies. Routes and locations are provided without guarantee.</p>
+  <p>Use it at your own risk. The developers of this app assume no liability for accidents, injuries, or problems that may occur while using this tour.</p>
 </div>
+
 <button class="disclaimer-btn" onclick="acceptDisclaimer()">Start Exploring</button>
   </div>
 </div>
@@ -383,10 +384,10 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
     Back
   </button>
-  <img class="header-logo" id="headerLogo" alt="München-Familienreise" />
+  <img class="header-logo" id="headerLogo" alt="Darlene's trip to Munich, Germany" />
   <div class="header-titles" id="headerTitles" style="display:none;">
     <h1 id="headerTourTitle"></h1>
-    <div class="sub">München-Familienreise 2026</div>
+    <div class="sub">Darlene's trip to Munich, Germany 2026</div>
   </div>
 </div>
 
@@ -394,8 +395,8 @@
 <div class="container" id="container">
   <div class="sidebar">
     <div id="toursView">
-      <h2 class="display">Willkommen zur München-Familienreise 2026</h2>
-      <p class="subtitle">Im Folgenden findet ihr eure Schnitzeljagd-Herausforderungen. Schließt sie alle ab, um eure Schätze freizuschalten.</p>
+      <h2 class="display">Welcome to Munich Germany 2026</h2>
+      <p class="subtitle">Below you'll find your itinerary, and hopefully you will find destination information that speaks to your interests.</p>
       <div id="toursList"></div>
     </div>
     <div id="stopsView">
@@ -490,7 +491,7 @@
 
 <audio id="audioPlayer"></audio>
 
-<footer>München-Familienreise &middot; 2026</footer>
+<footer>Darlene's trip to Munich 2026</footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
@@ -541,23 +542,37 @@ function placeholderSVG(name, hex){
    ============================================================ */
 const TOURS = [
     {
-    id: 'Malou',
-    title: 'Malous Herausforderungen bei der Schatzsuche.',
+    id: 'Wednesday, 11 November',
+    title: 'A tour of LMU.',
     color: 'pink',
     duration: '90 min',
     distance: '3 km',
-    description: `In München verstecken sich überall Spuren von Königen, Prinzessinnen, Löwen und alten Geheimnissen. Löse die Aufgaben, finde die gesuchten Orte und sammle deine Beweisfotos. Wenn du alle Herausforderungen schaffst, wartet am Ende eine Überraschung auf dich!`,
+    description: `A day with your great-nephew`,
     route: [
        {
-        name: 'Marienplatz',
-        lat: 48.13749340908795, lng: 11.575427038661978,
-        description: `Willkommen am Marienplatz – dem Herzen von München! Der Marienplatz ist seit dem Mittelalter einer der wichtigsten Plätze der Stadt.
-Aber schau dir die Mariensäule in der Mitte des Platzes einmal genauer an: Ganz oben steht die goldene Maria wie eine Königin über der Stadt. Und unten kämpfen kleine Wächter gegen einen Löwen, einen Drachen, eine Schlange und sogar einen Basilisken!
-DEINE AUFGABE: Finde die Mariensäule und entdecke den Drachen.
+        name: 'LMU',
+        lat: 48.15063472323264, lng: 11.58108971352709,
+        description: `Welcome to Ludwig Maximilian University of Munich, better known as LMU!
 
-📸 Mache ein Foto mit dem Drachen – und zeige uns deine mutigste Prinzessinnen-Pose!`,
-        audioUrl: 'https://wendycolleen.github.io/DarlenesTrip/Audio/Marien_M.mp3',
-        imageUrl: 'https://wendycolleen.github.io/DarlenesTrip/Images/Marienplatz.jpg',
+You're standing in front of one of Germany's most prestigious universities, with a history stretching back more than 550 years.
+
+But here's something surprising: LMU wasn't originally located in Munich!
+
+The university was founded in 1472 in Ingolstadt, moved to Landshut in 1800, and finally arrived in Munich in 1826.
+
+King Ludwig I of Bavaria had ambitious plans for Munich. He wanted to transform the city into a major European center of art, science, and education.
+
+To help achieve that vision, he commissioned architect Friedrich von Gärtner to design this magnificent university building, which opened in 1840.
+
+Over the centuries, LMU has been associated with remarkable scientists, philosophers, and scholars.
+
+One particularly famous figure is Werner Heisenberg, a pioneer of quantum mechanics and recipient of the 1932 Nobel Prize in Physics.
+
+Another is Max Planck, whose work helped lay the foundations of quantum theory.
+
+And, of course, LMU continues to educate future scientists`,
+        audioUrl: 'https://wendycolleen.github.io/DarlenesTrip/Audio/LMU.mp3',
+        imageUrl: 'https://wendycolleen.github.io/DarlenesTrip/Images/LMU.jpg',
         placeholder: false
       },
 	  {
